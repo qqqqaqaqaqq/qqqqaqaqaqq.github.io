@@ -28,6 +28,9 @@ dist-ssr
 *.sw?
 obj/
 
+# Visual Studio
+.vs/
+
 # Logs
 *.log
 
