@@ -40,7 +40,6 @@ function App() {
             <Header />
             <ScrollToTop />
             <Routes>
-                <Route path="/" element={<Navigate to="/home" replace />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/robot" element={<Robot />} />
                 <Route path="/purchase" element={<Purchase />} />

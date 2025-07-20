@@ -4,6 +4,7 @@ import compression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: '/qqqqaqaqaqq.github.io/', 
     plugins: [
         react(),
         compression({ algorithm: "gzip" }),
