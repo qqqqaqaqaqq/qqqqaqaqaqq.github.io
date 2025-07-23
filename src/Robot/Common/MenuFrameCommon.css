@@ -1,0 +1,97 @@
+.Robot_Selection {
+    width: 100%;
+    height: 100%;
+    /*  border: 1px solid rgba(255,255,255,0.8); /* */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.Robot_Menu_PC {
+    width: auto;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    /*  border: 3px solid #462bf7; /* */
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+    .Robot_Menu_PC img {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+
+.Robot_Menu_PC_Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Robot_Menu_Mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .Robot_Menu_PC {
+        display: none;
+    }
+
+    .Robot_Selection {
+        height: 100%;
+    }
+
+    .Robot_Menu_Mobile {
+        display: block;
+        width: clamp(200px, 90vw,500px);
+        height: 300px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: transparent;
+            cursor: pointer;
+        }
+}
