@@ -36,7 +36,7 @@ function Contact() {
 
 function App() {
     return (
-        <BrowserRouter  >
+        <HashRouter  >
             <Header />
             <ScrollToTop />
             <Routes>
@@ -48,7 +48,7 @@ function App() {
                 <Route path="/mypage" element={<MyPage />} />
             </Routes>
 
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
