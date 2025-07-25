@@ -1,0 +1,16 @@
+.Linear_Frame {
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    /* border: 10px solid rgba(0,0,0,0.5); /* */
+    box-sizing: border-box;
+}
+
+.Linear_Frame {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+    .Linear_Frame.fade-in {
+        opacity: 1;
+    }

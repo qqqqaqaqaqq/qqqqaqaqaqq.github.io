@@ -1,0 +1,116 @@
+.Header_Login_Modal, .Header_Sign_Modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    /* border: 2px solid #462bf7; /* */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background: rgba(140, 192, 230,0.2);
+    padding: 35px 15px;
+    border-radius: 12px;
+    gap: 0px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    /*   border: 2px solid #462bf7;/* */
+}
+
+    .Header_Login_Modal_Content h2, .Header_Sign_Modal_Content h2 {
+        color: white;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        margin: 0px;
+        /*     border: 5px solid #462bf7; /* */
+        box-sizing: border-box;
+    }
+
+    .Header_Login_Modal_Content input, .Header_Sign_Modal_Content input {
+        width: 70%;
+        display: block;
+        margin: 5px 0;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        /*   border: 5px solid #462bf7; /* */
+        box-sizing: border-box;
+    }
+
+    .Header_Login_Modal_Content button,
+    .Header_Sign_Modal_Content button {
+        width: 70%;
+        margin-top: 10px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 15px;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #9ee6d1;
+        color: #889994;
+        /*  border: 5px solid #462bf7; /* */
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+    }
+
+        .Header_Sign_Modal_Content button:active {
+            transform: scale(1.1);
+        }
+
+/* 해당 부분 추후 자바스크립트로 관리할 것 */
+@media (max-height : 900px) {
+    .Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+        transform: scale(0.9);
+        transform-origin: center;
+    }
+}
+
+@media (max-height : 800px) {
+    .Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+}
+
+@media (max-height : 700px) {
+    .Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+        transform: scale(0.7);
+        transform-origin: center;
+    }
+}
+
+@media (max-height : 600px) {
+    .Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+}
+
+@media (max-height : 500px) {
+    .Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+        transform: scale(0.5);
+        transform-origin: center;
+    }
+}
+
+@media (max-height : 400px) {
+    .Header_Login_Modal_Content, .Header_Sign_Modal_Content {
+        transform: scale(0.4);
+        transform-origin: center;
+    }
+}
