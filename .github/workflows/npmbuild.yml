@@ -45,14 +45,15 @@ jobs:
       - name: Build project
         run: npm run build
         
-      - name: Create 404.html for SPA routing
-        run: cp build/index.html build/404.html
-        
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: './dist'
+          
+      - name: Create 404.html for SPA routing
+        run: cp build/index.html build/404.html
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
