@@ -24,14 +24,14 @@ function BallScrew() {
     };
 
     const robotModels = [
-        { id: 'A0404', name: 'A0404', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A0804', name: 'A0804', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A1204', name: 'A1204', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A1604', name: 'A1604', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A2004', name: 'A2004', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A2404', name: 'A2404', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A0808', name: 'A0808', component: null, image: "/Home_image/Linear.png" },
-        { id: 'A1208', name: 'A1208', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A0404', name: 'BALL_A0404', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A0804', name: 'BALL_A0804', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A1204', name: 'BALL_A1204', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A1604', name: 'BALL_A1604', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A2004', name: 'BALL_A2004', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A2404', name: 'BALL_A2404', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A0808', name: 'BALL_A0808', component: null, image: "/Home_image/Linear.png" },
+        { id: 'BALL_A1208', name: 'BALL_A1208', component: null, image: "/Home_image/Linear.png" },
     ];
 
     const selectedModel = robotModels.find((robot) => robot.id === selectedPart);

@@ -2,8 +2,9 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import "./FrameCommon.css";
+import Comonent from "./ComponentCommon.jsx"
 
-function LinearModelGltf({ Model }) {
+function ModelGltf({ Model }) {
     const pathToLoad = `/Model_gltf/${Model}.glb`;  // 문자열 수정
     const gltf = useGLTF(pathToLoad);
     return <primitive object={gltf.scene} scale={1} />;
@@ -29,7 +30,7 @@ function FrameCommon({ model }) {
                     >
                         <ambientLight intensity={0.8} />
                         <directionalLight position={[5, 5, 5]} />
-                        <LinearModelGltf Model={model} />
+                        <ModelGltf Model={model} />
                         <OrbitControls
                             enablePan={true}
                             enableZoom={true}
@@ -45,31 +46,7 @@ function FrameCommon({ model }) {
                 </div>
             </div>
             <div className="FrameCommon_Caculation_And_Step">
-                <div className="Spec">
-                    <input
-                        type="text"
-                        className="Weight"
-                        placeholder="Weight (kg)"
-                    />
-                    <input
-                        type="text"
-                        className="Speed"
-                        placeholder="Speed (mm/s)"
-                    />
-                    <input
-                        type="Accelation"
-                        className="Accelation"
-                        placeholder="Accelation (sec)"
-                    />
-                    <input
-                        type="Stroke"
-                        className="Stroke"
-                        placeholder="Stroke (mm)"
-                    />
-                </div>
-                <div className="ModelShape">
-        
-                </div>
+                <Comonent model={model} />
             </div>
         </div>
     );
