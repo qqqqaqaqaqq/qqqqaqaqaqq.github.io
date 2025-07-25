@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import ImageButtonEvent from "./Home_ImgButtonEvent.jsx";
 import './Home.css';
 import './Home_ImgButtonEvent.css';
+import Notics from './Notics.jsx';
 
 function HomeGltf() {
 
@@ -61,13 +62,13 @@ function Home() {
                 </div>
             </div>
 
-
-            <div className="Announcements">
-
-            </div>
-
             <div className="Home_Body">
-                <ImageButtonEvent />
+                <>
+                    <Notics />
+                </>
+                <div className="Image_button">
+                    <ImageButtonEvent />
+                </div>
             </div>
 
         </div>

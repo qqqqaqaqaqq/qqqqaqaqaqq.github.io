@@ -38,15 +38,19 @@ function App() {
         <HashRouter>
             <Header />
             <ScrollToTop />
-            <Routes>
-                <Route path="/" element={<Navigate to="/home" replace />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/robot" element={<Robot />} />
-                <Route path="/purchase" element={<Purchase />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/mypage" element={<MyPage />} />
-            </Routes>
-
+            <div className="Main_Body">
+                <Routes>
+                    <Route path="/" element={<Navigate to="/home" replace />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/robot" element={<Robot />} />
+                    <Route path="/purchase" element={<Purchase />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/mypage" element={<MyPage />} />
+                </Routes>
+            </div>
+            <div className="Main_Footer">
+                <p>Copyright © 2025 Automated Factory. All rights reserved.</p>
+            </div>
         </HashRouter>
     );
 }

@@ -24,7 +24,7 @@
     justify-content: stretch;
     gap: 10px;
     padding: 20px;
-    /*   border: 1px solid rgba(255,255,255,0.8); /* */
+    /* border: 1px solid rgba(255,255,255,0.8); /* */
     box-sizing: border-box;
 }
 
@@ -53,4 +53,19 @@
     text-align: center;
     /* border: 1px solid rgba(255,255,255,0.8); /* */
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .FrameCommon_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .FrameCommon_Canvasimage {
+        width: 100%;
+        height : 100%;
+        border: 1px solid rgba(255,255,255,0.8); /* */
+        box-sizing: border-box;
+    }
 }

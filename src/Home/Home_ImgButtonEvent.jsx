@@ -33,6 +33,25 @@ const robotModels = [
         description: "센서와 지도를 기반으로 자율 주행이 가능하며, 유연한 환경에서 물류 및 점검에 사용됩니다"
     },
 ];
+
+function Card({ robot, onClick, showDescription = true }) {
+    return (
+        <div className="Home_Body_Menu">
+            <img src={robot.image} alt={robot.name} />
+            <div className="Home_Body_Menu_Content">
+                <h1>{robot.name}</h1>
+                {showDescription && <p>{robot.description}</p>}
+                <button
+                    onClick={onClick}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                >
+                    View More
+                </button>
+            </div>
+        </div>
+    );
+}
+
 function Home_ImageButton() {
     const navigate = useNavigate();
 
@@ -41,21 +60,11 @@ function Home_ImageButton() {
             <div className="Home_Body_Main_PC">
                 {
                     robotModels.map((robot) => (
-                        <div className="Home_Body_Menu" key={robot.name}>
-                            <img src={robot.image} alt={`Robot ${robot.name}`} />
-                            <div className="Home_Body_Menu_Content">
-                                <h1>{robot.name} </h1>
-                                <p>{robot.description}</p>
-                                <button
-                                    onClick={() => {
-                                        navigate(robot.redirecturl);
-                                    }}
-                                    className={robot.className}
-                                >
-                                    View More
-                                </button>
-                            </div>
-                        </div>
+                        <Card
+                            key={robot.name}
+                            robot={robot}
+                            onClick={() => navigate(robot.redirecturl)}
+                        />
                     ))
                 }
             </div>
@@ -64,20 +73,11 @@ function Home_ImageButton() {
                     {
                         robotModels.map((robot) => (
                             <SwiperSlide key={robot.name}>
-                                <div className="Home_Body_Menu">
-                                    <img src={robot.image} alt={`Robot ${robot.name}`} />
-                                    <div className="Home_Body_Menu_Content">
-
-                                        <button
-                                            onClick={() => {
-                                                navigate(robot.redirecturl);
-                                            }}
-                                            className={robot.className}
-                                        >
-                                            View More
-                                        </button>
-                                    </div>
-                                </div>
+                                <Card
+                                    robot={robot}
+                                    showDescription={false} // 모바일에서 설명 숨기기
+                                    onClick={() => navigate(robot.redirecturl)}
+                                />
                             </SwiperSlide>
                         ))
                     }

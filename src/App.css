@@ -1,11 +1,33 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto; /* 수평 중앙 정렬 */
     max-width: 1500px;
     min-height: 100vh;
     background: linear-gradient(100deg, rgba(31, 28, 44, 1), rgba(0, 242, 254, 0.7));
     /*   border: 5px solid #462bf7; /* */
+    box-sizing: border-box;
     padding-top: 50px;
     -webkit-tap-highlight-color: transparent; /* iOS 및 일부 Android 기본 강조 효과 */
     outline: none;
     user-select: none;
+}
+
+.Main_Body {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.Main_Footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 20px;
+    bottom: 0;
+    left: 0;
+    /*   border: 5px solid #462bf7; /* */
+    box-sizing: border-box;
 }
