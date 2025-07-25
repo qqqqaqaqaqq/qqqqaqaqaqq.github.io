@@ -1,0 +1,16 @@
+.Robot_Frame {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    /* border: 10px solid rgba(0,0,0,1); /* */
+    box-sizing: border-box;
+}
+
+.Robot_Frame {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+    .Robot_Frame.fade-in {
+        opacity: 1;
+    }
