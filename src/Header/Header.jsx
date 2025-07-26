@@ -16,7 +16,7 @@ function Header() {
     const [token, setToken] = useState(null);
 
     useEffect(() => {
-        const savedToken = localStorage.getItem('accessToken');
+        const savedToken = sessionStorage.getItem('accessToken');
         setToken(savedToken);
     }, []);
 
@@ -43,7 +43,7 @@ function Header() {
                     {token ? (
                         <button
                             onClick={() => {
-                                localStorage.removeItem('accessToken');
+                                sessionStorage.removeItem('accessToken');
                                 window.location.href = "/";
                             }}
                             className="logout"
@@ -108,7 +108,7 @@ function Header() {
                         {token ? (
                             <button
                                 onClick={() => {
-                                    localStorage.removeItem('accessToken');
+                                    sessionStorage.removeItem('accessToken');
                                     window.location.href = "/";
                                 }}
                                 className="logout"

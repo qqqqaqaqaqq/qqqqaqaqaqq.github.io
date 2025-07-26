@@ -1,0 +1,13 @@
+.ComponentButton
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius : 10px;
+    border: none;
+    box-sizing: border-box;
+}

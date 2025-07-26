@@ -174,7 +174,8 @@ async function Login_Check(ID, Password) {
             alert("로그인 성공");
             const token = data.message;
 
-            localStorage.setItem('accessToken', token);
+            const expiryTime = Date.now() + 30 * 60 * 1000;
+            sessionStorage.setItem('accessToken', JSON.stringify({ token, expiry: expiryTime }));
 
             return true;
         } else {

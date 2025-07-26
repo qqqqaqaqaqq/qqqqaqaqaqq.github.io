@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ShopMain.css";
 import "../CSS_Component/Background_Glass.css"
-import { PRODUCT_LIST, Linear_List, ITEM_COMPONENT } from "./PRODUCT_LIST.jsx"
+import { PRODUCT_LIST, ITEM_COMPONENT } from "./PRODUCT_LIST.jsx"
 
 
 const CATEGORY_OPTIONS = ["All", "Menu1", "Menu2", "Menu3", "Menu4"];

@@ -75,7 +75,7 @@ function Home_ImageButton() {
                             <SwiperSlide key={robot.name}>
                                 <Card
                                     robot={robot}
-                                    showDescription={false} // 모바일에서 설명 숨기기
+                                    showDescription={false}
                                     onClick={() => navigate(robot.redirecturl)}
                                 />
                             </SwiperSlide>
