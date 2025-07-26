@@ -1,0 +1,50 @@
+/* PRODUCT_LIST COMPONENT*/
+.Linear {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /*   border: 1px solid rgba(255, 255, 255, 0.2); /* */
+}
+
+.Input_Container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+    .Input_Container input, select {
+        width: 100%;
+        font-family: Gadugi, sans-serif;
+    }
+
+    .Input_Container label {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+    }
+
+.Result_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .Linear {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Input_Container {
+        width: 100%;
+    }
+}

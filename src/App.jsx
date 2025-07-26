@@ -3,9 +3,9 @@ import { HashRouter, BrowserRouter, Routes, Route, Navigate } from "react-router
 import './App.css';
 import Header from './Header/Header.jsx';
 import HomePage from './Home/Home.jsx';
-import RobotPage from './Robot/Robot.jsx';
 import ContactPage from './Contact/Contact.jsx';
 import ScrollToTop from './ScrollToTop';
+import ShopPage from './Shop_Component/ShopMain.jsx';
 
 
 
@@ -14,9 +14,10 @@ function Home() {
         <HomePage />
     );
 }
-function Robot() {
+
+function Shop() {
     return (
-        <RobotPage />
+        <ShopPage />
     );
 }
 function MyPage() {
@@ -36,14 +37,16 @@ function Contact() {
 function App() {
     return (
         <HashRouter>
-            <Header />
+            <div className="Main_Header">
+                <Header />
+            </div>
             <ScrollToTop />
             <div className="Main_Body">
                 <Routes>
                     <Route path="/" element={<Navigate to="/home" replace />} />
                     <Route path="/home" element={<Home />} />
-                    <Route path="/robot" element={<Robot />} />
                     <Route path="/purchase" element={<Purchase />} />
+                    <Route path="/shop" element={<Shop />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/mypage" element={<MyPage />} />
                 </Routes>

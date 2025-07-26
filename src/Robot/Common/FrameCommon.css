@@ -1,6 +1,6 @@
 .FrameCommon {
     width: 100%;
-    height: 1000px;
+    height: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -13,6 +13,7 @@
     background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.8); /* */
     box-sizing: border-box;
 }
 
@@ -57,14 +58,18 @@
 
 @media (max-width: 768px) {
     .FrameCommon_item {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
+        padding: 0px;
     }
+
     .FrameCommon_Canvasimage {
         width: 100%;
-        height : 100%;
+        height: 100%;
         border: 1px solid rgba(255,255,255,0.8); /* */
         box-sizing: border-box;
     }

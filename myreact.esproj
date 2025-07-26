@@ -10,7 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="node_modules\**" />
+    <None Remove="src\Robot\**" />
+    <None Remove="src\Step\**" />
     <TypeScriptConfiguration Remove="node_modules\**" />
+    <TypeScriptConfiguration Remove="src\Robot\**" />
+    <TypeScriptConfiguration Remove="src\Step\**" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\Notics\" />

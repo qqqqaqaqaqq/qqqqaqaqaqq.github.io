@@ -33,7 +33,7 @@ function Header() {
                 </div>
 
                 <div className="Header_PC_html_Menu">
-                    <Link to="/robot" className="robot">Robot</Link>
+                    <Link to="/shop" className="menu">Shop</Link>
                     <Link to="/purchase" className="purchase">Purchase</Link>
                     <Link to="/contact" className="contact">Contact</Link>
                     <Link to="/mypage" className="step">MyPage</Link>
@@ -101,7 +101,7 @@ function Header() {
 
                         </div>
                         <Link to="/home" className="menu">Home</Link>
-                        <Link to="/robot" className="menu">Robot</Link>
+                        <Link to="/shop" className="menu">Shop</Link>
                         <Link to="/purchase" className="menu">Purchase</Link>
                         <Link to="/contact" className="menu">Contact</Link>
                         <Link to="/mypage" className="menu">MyPage</Link>
