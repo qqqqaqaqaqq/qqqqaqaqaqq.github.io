@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './btn.css'
+import '../CommonCSS/btn.css'
 import './GuestAuthOptions.css'
 import { Link } from 'react-router-dom';
 

@@ -1,7 +1,5 @@
 import './Home.css';
 import { useState, useEffect } from 'react';
-import MiniForm1 from '../MiniForm/MiniForm.jsx';
-import MiniForm2 from '../MiniForm/MiniForm.jsx';
 import { isMobile } from 'react-device-detect';
 
 const link = [

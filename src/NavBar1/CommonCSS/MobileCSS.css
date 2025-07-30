@@ -1,8 +1,5 @@
-.sidemenu {
-    display: block;
-}
-
 .navigate {
+    display: flex;
     width: 100vw;
     height: auto;
     padding: 5px;

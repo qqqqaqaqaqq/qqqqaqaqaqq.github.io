@@ -1,6 +1,6 @@
 ﻿import './Navibar.css';
-import './btn.css'
-import GuestAuthOptions from './GuestAuthOptions.jsx';
+import './CommonCSS/btn.css'
+import GuestAuthOptions from './AutoModal/GuestAuthOptions.jsx';
 import { logo, link_menupage, link_authpage, link_loginpage, link_iconpage, link_searchimage } from './datalist.jsx';
 
 import { useEffect, useState } from 'react';
@@ -15,9 +15,13 @@ export function Navibar() {
 
     useEffect(() => {
         if (MobileMode === true) {
-            import('./MobileCSS.css');
+            import('./CommonCSS/MobileCSS.css');
+        }
+        else {
+            import('./CommonCSS/PcCSS.css');
         }
     }, [MobileMode])
+
 
     return (
         < div className="navigate" >
