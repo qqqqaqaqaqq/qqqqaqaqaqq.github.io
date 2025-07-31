@@ -3,8 +3,11 @@ import { isMobile } from 'react-device-detect';
 import './MobileMode.css'
 function MobileMode() {
     const [MobileMode, setMobileMode] = useState(() => {
-        const saved = sessionStorage.getItem('isMobile');
-        return saved !== null ? saved==='true' : isMobile;
+        if (typeof window !== 'undefined') {
+            const saved = sessionStorage.getItem('isMobile');
+            return saved !== null ? saved === 'true' : isMobile;
+        }
+        return isMobile;
     });
 
     function btntext() {

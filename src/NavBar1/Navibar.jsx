@@ -8,9 +8,12 @@ import { isMobile } from 'react-device-detect';
 import { Link } from 'react-router-dom';
 
 export function Navibar() {
-    const [MobileMode] = useState(() => {
-        const saved = sessionStorage.getItem('isMobile');
-        return saved !== null ? saved === 'true' : isMobile;
+    const [MobileMode, setMobileMode] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const saved = sessionStorage.getItem('isMobile');
+            return saved !== null ? saved === 'true' : isMobile;
+        }
+        return isMobile;
     });
 
     useEffect(() => {
