@@ -10,22 +10,29 @@ import './CommonCSS/MobileCSS.css';
 import './CommonCSS/PcCSS.css';
 
 export function Navibar() {
-    const [MobileMode, setMobileMode] = useState(() => {
-        if (typeof window !== 'undefined') {
-            const saved = sessionStorage.getItem('isMobile');
-            return saved !== null ? saved === 'true' : isMobile;
-        }
-        return isMobile;
+    const [MobileMode] = useState(() => {
+        const saved = sessionStorage.getItem('isMobile');
+        return saved !== null ? saved === 'true' : isMobile;
     });
 
+
     useEffect(() => {
-        document.body.classList.toggle('mobile', MobileMode);
-        document.body.classList.toggle('pc', !MobileMode);
-    }, [MobileMode]);
+        if (document.getElementById('navigate') === null) {
+            return;
+        }
+        if (MobileMode === true) {
+            document.getElementById('navigate').classList.add('mobile');
+            document.getElementById('navigate').classList.add('pc');
+        }
+        else {
+            document.getElementById('navigate').classList.add('pc');
+            document.getElementById('navigate').classList.add('add');
+        }
+    }, [MobileMode])
 
 
     return (
-        < div className="navigate" >
+        <div className={`navigate ${MobileMode ? 'mobile' : ''}`} id="navigate">
             {/* 
                  -navigate
                     -left
