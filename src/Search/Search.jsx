@@ -1,6 +1,9 @@
+import './Search.css'
+
 export function Search() {
     return (
-        <div className="search">
+        <div className="page-search">
+        
 
         </div>
     )

@@ -72,7 +72,7 @@
         box-sizing: border-box;
     }
 
-        .navigate .center .search {
+        .navigate .center .nav-search {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -85,7 +85,7 @@
         }
 
             /* Search Home icon container */
-            .navigate .center .search a {
+            .navigate .center .nav-search a {
                 width: auto;
                 display: flex;
                 justify-content: center;
@@ -94,13 +94,13 @@
             }
 
             /* Search Home icon */
-            .navigate .center .search img {
+            .navigate .center .nav-search img {
                 width: 50px;
                 height: 50px;
                 cursor: pointer;
             }
 
-            .navigate .center .search input {
+            .navigate .center .nav-search input {
                 width: 100%;
                 border: none;
                 box-sizing: border-box;
@@ -112,20 +112,20 @@
                 color: inherit;
             }
 
-                .navigate .center .search input::placeholder {
+                .navigate .center .nav-search input::placeholder {
                     color: transparent;
                 }
 
-                .navigate .center .search input:focus {
+                .navigate .center .nav-search input:focus {
                     outline: none;
                 }
 
-                    .navigate .center .search input:focus::placeholder {
+                    .navigate .center .nav-search input:focus::placeholder {
                         color: rgb(128 128 128);
                         font-family: inherit;
                     }
 
-            .navigate .center .search button {
+            .navigate .center .nav-search button {
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
@@ -137,7 +137,7 @@
                 cursor: pointer;
             }
 
-                .navigate .center .search button i {
+                .navigate .center .nav-search button i {
                     font-size: 30px;
                     color: rgb(182, 255, 0);
                 }

@@ -56,7 +56,7 @@ export function Navibar() {
                 </div>
             </div>
             <div className="center">
-                <form className="search">
+                <form className="nav-search">
                     {link_searchimage.map((item) => (
                         <Link to={item.url} key={item.id}>
                             <img src={item.img_url}></img>

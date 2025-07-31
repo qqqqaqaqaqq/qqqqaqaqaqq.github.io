@@ -30,7 +30,7 @@ function MobileMode() {
                 onClick={() => {
                     setMobileMode(!MobileMode);
                     sessionStorage.setItem('isMobile', !MobileMode);
-                    window.location.href = '/';
+                    window.location.reload();
                 }}
             >
                 <i className="fas fa-cog" style={{ marginRight: '8px' }}></i>
