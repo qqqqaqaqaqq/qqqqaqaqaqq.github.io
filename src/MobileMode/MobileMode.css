@@ -1,0 +1,14 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+    body.light {
+        --bg-color: white;
+        --text-color: rgba(0, 0, 0, 0.7);
+    }
+
+    body.dark {
+        --bg-color: rgba(0, 0, 0, 0.7);
+        --text-color: white;
+    }

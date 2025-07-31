@@ -1,0 +1,54 @@
+.rectanglebtn {
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    will-change: transform; /* Pre Ready focus, hover */
+}
+
+    .rectanglebtn:hover {
+        transform: scale(1.05) translateZ(0); /* Gpu  */
+        transition: transform 0.1s ease;
+    }
+
+    .rectanglebtn:active {
+        transform: scale(1.00) translateZ(0); /* Gpu  */
+        transition: transform 0.1s ease;
+    }
+
+.radiusbtn {
+    aspect-ratio: 1/1 !important;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    will-change: transform; /* Pre Ready focus, hover */
+}
+
+    .radiusbtn:hover {
+        transform: scale(1.05) translateZ(0); /* Induce GPU Rendering */
+        transition: transform 0.1s ease;
+    }
+
+    .radiusbtn:active {
+        transform: scale(1.00) translateZ(0); /* Gpu  */
+        transition: transform 0.1s ease;
+    }
+
+.custombtn-number1 {
+    aspect-ratio: 1/1 !important;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20%;
+    will-change: transform; /* Pre Ready focus, hover */
+}
+
+    .custombtn-number1:hover {
+        transform: scale(1.05) translateZ(0); /* Induce GPU Rendering */
+        transition: transform 0.1s ease;
+    }
+
+    .custombtn-number1:active {
+        transform: scale(1.00) translateZ(0); /* Gpu  */
+        transition: transform 0.1s ease;
+    }
