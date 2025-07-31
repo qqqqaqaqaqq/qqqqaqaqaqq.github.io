@@ -6,6 +6,8 @@ import { logo, link_menupage, link_authpage, link_loginpage, link_iconpage, link
 import { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Link } from 'react-router-dom';
+import './CommonCSS/MobileCSS.css';
+import './CommonCSS/PcCSS.css';
 
 export function Navibar() {
     const [MobileMode, setMobileMode] = useState(() => {
@@ -17,13 +19,9 @@ export function Navibar() {
     });
 
     useEffect(() => {
-        if (MobileMode === true) {
-            import('./CommonCSS/MobileCSS.css');
-        }
-        else {
-            import('./CommonCSS/PcCSS.css');
-        }
-    }, [MobileMode])
+        document.body.classList.toggle('mobile', MobileMode);
+        document.body.classList.toggle('pc', !MobileMode);
+    }, [MobileMode]);
 
 
     return (
